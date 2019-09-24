@@ -1,0 +1,59 @@
+{
+  "name": "bynk",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.4",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "@types/react-redux": "^7.1.2",
+    "@types/react-resizable": "^1.7.1",
+    "@types/styled-components": "^4.1.19",
+    "antd": "^3.23.2",
+    "babel-plugin-import": "^1.12.1",
+    "customize-cra": "^0.6.0",
+    "gh-pages": "^2.1.1",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "local-storage": "^2.0.0",
+    "personnummer": "^2.0.2",
+    "popmotion": "^8.7.0",
+    "react": "^16.9.0",
+    "react-app-rewired": "^2.1.3",
+    "react-dom": "^16.9.0",
+    "react-pose": "^4.0.8",
+    "react-redux": "^7.1.1",
+    "react-resizable": "^1.8.0",
+    "react-responsive": "^8.0.1",
+    "react-scripts": "3.1.1",
+    "react-super-responsive-table": "^5.0.4",
+    "react-use-localstorage": "^3.2.1",
+    "redux": "^4.0.4",
+    "styled-components": "^4.3.2",
+    "typescript": "3.6.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "https://sarkarprotik.github.io/bynk182/"
+}
