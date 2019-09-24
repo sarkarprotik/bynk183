@@ -16,7 +16,7 @@ const MobileInput = (props: any) => {
   useEffect(() => {
     validatePhoneNr(value)
     setValue(tempValue)
-  })
+  }, [value, tempValue])
 
   isValid ? setMobile(value) : setMobile('')
   console.log('redux', mobile)
@@ -25,9 +25,7 @@ const MobileInput = (props: any) => {
     if (number.length === 10) {
       console.log(`${number} is Valid`)
       setIsValid(true)
-      //   setPhoneNr(number);
     } else {
-      //   setPhoneNr("");
       setIsValid(false)
       console.log(`${number} is NOT Valid`)
     }

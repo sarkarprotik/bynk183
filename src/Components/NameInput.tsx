@@ -5,7 +5,7 @@ import * as actionTypes from '../Redux/actions'
 import * as ls from 'local-storage'
 
 const NameInput = (props: any) => {
-  const { name, setName, clearForm } = props
+  const { setName } = props
   const [value, setValue] = useState('')
   const [isValid, setIsValid] = useState(false)
 
@@ -14,7 +14,7 @@ const NameInput = (props: any) => {
   useEffect(() => {
     validateName(value)
     setValue(tempValue)
-  })
+  }, [value, tempValue])
 
   isValid ? setName(value) : setName('')
 

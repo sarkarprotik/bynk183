@@ -22,21 +22,7 @@ const openNotification = () => {
 }
 
 const RegistrationForm = (props: any) => {
-  const {
-    image,
-    name,
-    setName,
-    ssn,
-    setSsn,
-    mobile,
-    setMobile,
-    email,
-    setEmail,
-    country,
-    setCountry,
-    addUser,
-    clearForm
-  } = props
+  const { image, name, ssn, mobile, email, country, addUser } = props
 
   const [visible, setVisible] = useState(false)
 

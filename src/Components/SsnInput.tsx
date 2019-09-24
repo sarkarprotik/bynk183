@@ -21,7 +21,7 @@ const SsnInput = (props: any) => {
   useEffect(() => {
     validateSSN(value)
     setValue(tempValue)
-  })
+  }, [value, tempValue])
 
   isValid ? setSsn(value) : setSsn('')
   console.log('reduxx', ssn)

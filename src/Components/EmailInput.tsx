@@ -14,7 +14,7 @@ const EmailInput = (props: any) => {
   useEffect(() => {
     validateEmail(value)
     setValue(tempValue)
-  })
+  }, [value, tempValue])
 
   isValid ? setEmail(value) : setEmail('')
   console.log('reduxx', email)
