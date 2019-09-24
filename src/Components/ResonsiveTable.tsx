@@ -52,8 +52,8 @@ const ResponsiveTable = (props: any) => {
       <Table>
         <Thead>
           <Tr>
-            <Th style={{ paddingTop: 16, paddingBottom: 16, paddingLeft: 16 }}>Avatar</Th>
-            <Th style={{ padding: 8 }}>Name</Th>
+            <Th style={{ padding: 16 }}>Avatar</Th>
+            <Th>Name</Th>
             <Th>SSN</Th>
             <Th>E-Mail</Th>
             <Th>Mobile</Th>
@@ -66,13 +66,11 @@ const ResponsiveTable = (props: any) => {
             return (
               <Tr style={{ padding: 16 }}>
                 <Td>
-                  <div style={{ paddingBottom: 16, paddingLeft: 16 }}>
-                    <Avatar style={{ height: '100%' }} icon="user" src={userobject.avatar} />
+                  <div style={{ padding: 16 }}>
+                    <Avatar size={46} icon="user" src={userobject.avatar} />
                   </div>
                 </Td>
-                <Td>
-                  <div>{userobject.name}</div>
-                </Td>
+                <Td>{userobject.name}</Td>
                 <Td>{userobject.ssn}</Td>
                 <Td>{userobject.email}</Td>
                 <Td>{userobject.mobile}</Td>
