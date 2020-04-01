@@ -1,2 +1,1 @@
-#See Project
-https://sarkarprotik.github.io/simple/
+https://github.com/sarkarprotik/bynk183
